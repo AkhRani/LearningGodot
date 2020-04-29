@@ -1,0 +1,4 @@
+Using tilesheet from https://www.kenney.nl/assets/abstract-platformer
+
+Using pieces of the GBot character, created by Andreas Esau, from
+https://godot-es-docs.readthedocs.io/en/latest/_downloads/gbot_resources.zip

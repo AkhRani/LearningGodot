@@ -1,0 +1,860 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
+[ext_resource path="res://gbot_resources/gBot_hip.png" type="Texture" id=2]
+[ext_resource path="res://gbot_resources/gBot_leg_r.png" type="Texture" id=3]
+[ext_resource path="res://gbot_resources/gBot_shin_r.png" type="Texture" id=4]
+[ext_resource path="res://gbot_resources/gBot_foot_r.png" type="Texture" id=5]
+[ext_resource path="res://gbot_resources/gBot_leg_l.png" type="Texture" id=6]
+[ext_resource path="res://gbot_resources/gBot_shin_l.png" type="Texture" id=7]
+[ext_resource path="res://gbot_resources/gBot_foot_l.png" type="Texture" id=8]
+[ext_resource path="res://gbot_resources/gBot_body.png" type="Texture" id=9]
+[ext_resource path="res://gbot_resources/gBot_arm_r.png" type="Texture" id=10]
+[ext_resource path="res://gbot_resources/gBot_forearm_r.png" type="Texture" id=11]
+[ext_resource path="res://gbot_resources/gBot_arm_l.png" type="Texture" id=12]
+[ext_resource path="res://gbot_resources/gBot_forearm_l.png" type="Texture" id=13]
+[ext_resource path="res://gbot_resources/gBot_head.png" type="Texture" id=14]
+[ext_resource path="res://gbot_resources/gBot_jaw.png" type="Texture" id=15]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Idle2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("gBot_hip/gBot_leg_l/gBot_shin_l/gBot_foot_l/end:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 79.8086, 18.8639 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("gBot_hip/gBot_leg_l/gBot_shin_l/gBot_foot_l/end:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("gBot_hip/gBot_leg_l/gBot_shin_l/gBot_foot_l:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -7.46667, 119.467 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("gBot_hip/gBot_leg_l/gBot_shin_l/gBot_foot_l:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 6.65042 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("gBot_hip/gBot_leg_l/gBot_shin_l:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -23.2, 101.6 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("gBot_hip/gBot_leg_l/gBot_shin_l:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 10.0928 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("gBot_hip/gBot_leg_l:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 38, 35 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("gBot_hip/gBot_leg_l:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -16.8018 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("gBot_hip/gBot_body/gBot_arm_r/gBot_forearm_r/end:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 13.4208, 144.699 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("gBot_hip/gBot_body/gBot_arm_r/gBot_forearm_r/end:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -9.42172 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("gBot_hip/gBot_body/gBot_arm_r/gBot_forearm_r:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -22.6597, 99.0784 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("gBot_hip/gBot_body/gBot_arm_r/gBot_forearm_r:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("gBot_hip/gBot_body/gBot_arm_r:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -59.3776, -109.797 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("gBot_hip/gBot_body/gBot_arm_r:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("gBot_hip/gBot_body/gBot_head/end:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 95.9855, -125.162 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("gBot_hip/gBot_body/gBot_head/end:rotation_degrees")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("gBot_hip/gBot_body/gBot_head:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2.10189, -261.413 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("gBot_hip/gBot_body/gBot_head:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("gBot_hip/gBot_body:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -1, -47 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("gBot_hip/gBot_body:rotation_degrees")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.196848 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("gBot_hip:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("gBot_hip:rotation_degrees")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("gBot_hip/gBot_leg_r/gBot_shin_r/gBot_foot_r/end:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 78.3576, 8.70648 ) ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("gBot_hip/gBot_leg_r/gBot_shin_r/gBot_foot_r/end:rotation_degrees")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("gBot_hip/gBot_leg_r/gBot_shin_r/gBot_foot_r:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -19.2, 126.933 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("gBot_hip/gBot_leg_r/gBot_shin_r/gBot_foot_r:rotation_degrees")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("gBot_hip/gBot_leg_r/gBot_shin_r:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -27.2, 100.8 ) ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("gBot_hip/gBot_leg_r/gBot_shin_r:rotation_degrees")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("gBot_hip/gBot_leg_r:position")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -38, 42 ) ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("gBot_hip/gBot_leg_r:rotation_degrees")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/30/type = "value"
+tracks/30/path = NodePath("gBot_hip/gBot_body/gBot_arm_l/gBot_forearm_l/end:position")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 34.0095, 118.781 ) ]
+}
+tracks/31/type = "value"
+tracks/31/path = NodePath("gBot_hip/gBot_body/gBot_arm_l/gBot_forearm_l/end:rotation_degrees")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/32/type = "value"
+tracks/32/path = NodePath("gBot_hip/gBot_body/gBot_arm_l/gBot_forearm_l:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -3.66328, 98.0132 ) ]
+}
+tracks/33/type = "value"
+tracks/33/path = NodePath("gBot_hip/gBot_body/gBot_arm_l/gBot_forearm_l:rotation_degrees")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/34/type = "value"
+tracks/34/path = NodePath("gBot_hip/gBot_body/gBot_arm_l:position")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 57.6252, -109.199 ) ]
+}
+tracks/35/type = "value"
+tracks/35/path = NodePath("gBot_hip/gBot_body/gBot_arm_l:rotation_degrees")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/36/type = "value"
+tracks/36/path = NodePath("gBot_hip/gBot_body/gBot_head/gBot_jaw/end:position")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 159.788, 14.6641 ) ]
+}
+tracks/37/type = "value"
+tracks/37/path = NodePath("gBot_hip/gBot_body/gBot_head/gBot_jaw/end:rotation_degrees")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/38/type = "value"
+tracks/38/path = NodePath("gBot_hip/gBot_body/gBot_head/gBot_jaw:position")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -36.3961, 88.1039 ) ]
+}
+tracks/39/type = "value"
+tracks/39/path = NodePath("gBot_hip/gBot_body/gBot_head/gBot_jaw:rotation_degrees")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 1.2
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("gBot_hip/gBot_leg_r/gBot_shin_r/gBot_foot_r/end:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 78.3576, 8.70648 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("gBot_hip/gBot_leg_r/gBot_shin_r/gBot_foot_r/end:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("gBot_hip/gBot_leg_r/gBot_shin_r/gBot_foot_r:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -19.2, 126.933 ), Vector2( -19.2, 126.933 ), Vector2( -19.2, 126.933 ), Vector2( -19.2, 126.933 ), Vector2( -19.2, 126.933 ), Vector2( -19.2, 126.933 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("gBot_hip/gBot_leg_r/gBot_shin_r/gBot_foot_r:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -6.1746, -4.03364, -27.3553, 5.8521, -2.56194 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("gBot_hip/gBot_leg_r/gBot_shin_r:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -27.2, 100.8 ), Vector2( -27.2, 100.8 ), Vector2( -27.2, 100.8 ), Vector2( -27.2, 100.8 ), Vector2( -27.2, 100.8 ), Vector2( -27.2, 100.8 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("gBot_hip/gBot_leg_r/gBot_shin_r:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 8.73128, 8.11818, 55.809, 17.691, 23.1803 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("gBot_hip/gBot_leg_r:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -38, 42 ), Vector2( -38, 42 ), Vector2( -38, 42 ), Vector2( -38, 42 ), Vector2( -38, 42 ), Vector2( -38, 42 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("gBot_hip/gBot_leg_r:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 7.71949, 18.4488, -26.0946, -30.6603, -21.7784 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("gBot_hip/gBot_leg_l/gBot_shin_l/gBot_foot_l:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -7.46667, 119.467 ), Vector2( -7.46667, 119.467 ), Vector2( -7.46667, 119.467 ), Vector2( -7.46667, 119.467 ), Vector2( -7.46667, 119.467 ), Vector2( -7.46667, 119.467 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("gBot_hip/gBot_leg_l/gBot_shin_l/gBot_foot_l:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -28.8963, -1.28469, -1.99998, -5.94911, -11.7554, -4.21913 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("gBot_hip/gBot_leg_l/gBot_shin_l:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -23.2, 101.6 ), Vector2( -23.2, 101.6 ), Vector2( -23.2, 101.6 ), Vector2( -23.2, 101.6 ), Vector2( -23.2, 101.6 ), Vector2( -23.2, 101.6 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("gBot_hip/gBot_leg_l/gBot_shin_l:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 45.2508, 20.4563, 18.2929, 7.79028, 12.311, 13.1699 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("gBot_hip/gBot_leg_l:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 38, 35 ), Vector2( 38, 35 ), Vector2( 38, 35 ), Vector2( 38, 35 ), Vector2( 38, 35 ), Vector2( 38, 35 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("gBot_hip/gBot_leg_l:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -16.3124, -24.8341, -16.5075, -2.04102, 10.4504, 20.2161 ]
+}
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 141.795
+height = 49.542
+
+[node name="gbot" type="KinematicBody2D"]
+scale = Vector2( 0.1, 0.1 )
+script = ExtResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Idle2 = SubResource( 1 )
+anims/Walk = SubResource( 2 )
+
+[node name="gBot_hip" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_ik_": true
+}
+
+[node name="gBot_leg_r" type="Sprite" parent="gBot_hip"]
+position = Vector2( -38, 42 )
+scale = Vector2( 1.25, 1.25 )
+texture = ExtResource( 3 )
+offset = Vector2( -10.4, 51.2 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="gBot_shin_r" type="Sprite" parent="gBot_hip/gBot_leg_r"]
+position = Vector2( -27.2, 100.8 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 4 )
+offset = Vector2( 17.0667, 47.9999 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="gBot_foot_r" type="Sprite" parent="gBot_hip/gBot_leg_r/gBot_shin_r"]
+position = Vector2( -19.2, 126.933 )
+texture = ExtResource( 5 )
+offset = Vector2( 54.4, 7.46674 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="end" type="Position2D" parent="gBot_hip/gBot_leg_r/gBot_shin_r/gBot_foot_r"]
+position = Vector2( 78.3576, 8.70648 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="gBot_leg_l" type="Sprite" parent="gBot_hip"]
+position = Vector2( 38, 35 )
+rotation = -0.293247
+scale = Vector2( 1.25, 1.25 )
+z_index = -1
+texture = ExtResource( 6 )
+offset = Vector2( -7.99998, 55.2 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="gBot_shin_l" type="Sprite" parent="gBot_hip/gBot_leg_l"]
+position = Vector2( -23.2, 101.6 )
+rotation = 0.176153
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 7 )
+offset = Vector2( 20.2666, 46.9333 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="gBot_foot_l" type="Sprite" parent="gBot_hip/gBot_leg_l/gBot_shin_l"]
+position = Vector2( -7.46667, 119.467 )
+rotation = 0.116072
+texture = ExtResource( 8 )
+offset = Vector2( 52.2667, 23.4666 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="end" type="Position2D" parent="gBot_hip/gBot_leg_l/gBot_shin_l/gBot_foot_l"]
+position = Vector2( 79.8086, 18.8639 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="gBot_body" type="Sprite" parent="gBot_hip"]
+position = Vector2( -1, -47 )
+rotation = 0.00343565
+texture = ExtResource( 9 )
+offset = Vector2( 7, -102 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="gBot_arm_r" type="Sprite" parent="gBot_hip/gBot_body"]
+position = Vector2( -59.3776, -109.797 )
+z_index = 1
+texture = ExtResource( 10 )
+offset = Vector2( -2.91065, 26.0102 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="gBot_forearm_r" type="Sprite" parent="gBot_hip/gBot_body/gBot_arm_r"]
+position = Vector2( -22.6597, 99.0784 )
+texture = ExtResource( 11 )
+offset = Vector2( 15.2576, 74.9481 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="end" type="Position2D" parent="gBot_hip/gBot_body/gBot_arm_r/gBot_forearm_r"]
+position = Vector2( 13.4208, 144.699 )
+rotation = -0.16444
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="gBot_arm_l" type="Sprite" parent="gBot_hip/gBot_body"]
+position = Vector2( 57.6252, -109.199 )
+z_index = -2
+texture = ExtResource( 12 )
+offset = Vector2( 7.07211, 20.9758 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="gBot_forearm_l" type="Sprite" parent="gBot_hip/gBot_body/gBot_arm_l"]
+show_behind_parent = true
+position = Vector2( -3.66328, 98.0132 )
+texture = ExtResource( 13 )
+offset = Vector2( 18.2335, 67.9377 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="end" type="Position2D" parent="gBot_hip/gBot_body/gBot_arm_l/gBot_forearm_l"]
+position = Vector2( 34.0095, 118.781 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="gBot_head" type="Sprite" parent="gBot_hip/gBot_body"]
+position = Vector2( 2.10189, -261.413 )
+scale = Vector2( 0.716085, 0.716085 )
+texture = ExtResource( 14 )
+offset = Vector2( 10.1705, -57.1863 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="end" type="Position2D" parent="gBot_hip/gBot_body/gBot_head"]
+position = Vector2( 95.9855, -125.162 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="gBot_jaw" type="Sprite" parent="gBot_hip/gBot_body/gBot_head"]
+position = Vector2( -36.3961, 88.1039 )
+scale = Vector2( 0.75948, 0.75948 )
+texture = ExtResource( 15 )
+offset = Vector2( 96.1475, 3.59357 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="end" type="Position2D" parent="gBot_hip/gBot_body/gBot_head/gBot_jaw"]
+position = Vector2( 159.788, 14.6641 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 168.376 )
+shape = SubResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.3, 0.3 )
+limit_bottom = 1000
