@@ -34,7 +34,10 @@ func _physics_process(delta):
             $AnimationPlayer.play("Idle2")
         
         if  Input.is_action_just_pressed("ui_up"):
-            velocity.y = -1 * GRAVITY/4
+            velocity.y = -1 * GRAVITY/3
     var old_vel = velocity
     velocity = move_and_slide(old_vel);
     ballistic = old_vel == velocity
+    if position.y > 2000:
+        get_tree().reload_current_scene()
+
