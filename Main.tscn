@@ -1,9 +1,10 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://headprite.tscn" type="PackedScene" id=1]
 [ext_resource path="res://gbot.tscn" type="PackedScene" id=2]
 [ext_resource path="res://tilesheet_terrain.png" type="Texture" id=3]
 [ext_resource path="res://Platform_rightleft.tscn" type="PackedScene" id=4]
+[ext_resource path="res://arm.tscn" type="PackedScene" id=5]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -260,3 +261,7 @@ position = Vector2( 1083.65, 349.582 )
 
 [node name="Node2D" parent="Node2D" instance=ExtResource( 4 )]
 position = Vector2( -640.882, -250.46 )
+
+[node name="Node2D2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 281.392, 140.865 )
+scale = Vector2( 0.1, 0.1 )

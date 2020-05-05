@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://arm.gd" type="Script" id=1]
+[ext_resource path="res://gbot_resources/gBot_arm_r.png" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="arm" type="Sprite" parent="."]
+rotation = -1.71421
+texture = ExtResource( 2 )
+offset = Vector2( 5.66394, 34.4674 )
+
+[node name="forearm" type="Sprite" parent="arm"]
+position = Vector2( -15.9993, 107 )
+rotation = 0.0210094
+texture = ExtResource( 2 )
+offset = Vector2( 1.37756, 71.4865 )
+
+[node name="hand" type="Position2D" parent="arm/forearm"]
+position = Vector2( -19.8504, 161.978 )

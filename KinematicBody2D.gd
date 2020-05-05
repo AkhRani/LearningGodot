@@ -12,6 +12,11 @@ const FRICTION = 980
 func _ready():
     pass # Replace with function body.
 
+func _process(delta):
+    var arm = $gBot_hip/gBot_body/gBot_arm_r
+    var angle = arm.get_angle_to(get_global_mouse_position())
+    arm.rotate(angle - PI/2)
+
 func _physics_process(delta):
     var MAX_VEL = 200
     var ACCEL = MAX_VEL / 30
